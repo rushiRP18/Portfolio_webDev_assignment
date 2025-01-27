@@ -45,6 +45,8 @@
     transition: all;
     font-weight: 500;
     transition: all 0.7s ease;
+    text-decoration: none;
+    
 
     &:hover {
         color: #5840ba;
@@ -53,6 +55,10 @@
     }
 }
 
+.nav_item a{
+    text-decoration: none;
+    color: black;
+}
 .contact_btn {
     font-size: 20px;
     border: 2px solid white;
@@ -186,7 +192,7 @@
 }
 
 .years {
-    
+
     color: white;
     position: relative;
     font-size: 20px;
@@ -512,7 +518,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 .pitem {
@@ -533,7 +539,7 @@
     /* Maintains the image's aspect ratio */
     border-radius: 20px;
     /* Keeps the rounded corners */
-    margin: 1.5rem 0  0 2rem;
+    margin: 1.5rem 0 0 2rem;
     /* Adjusts spacing around the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Adds a subtle shadow for better emphasis */
@@ -613,31 +619,36 @@
     right: 2rem;
     transition: background-color 1s ease, color 1s ease;
 }
-.details:hover .d2{
+
+.details:hover .d2 {
     background-color: #494949;
     color: white;
     cursor: pointer;
 }
-.details:hover .d1{
+
+.details:hover .d1 {
     background-color: #b3be62;
-    color: #494949;  
-}
-.details:hover .d1 i{
-   
-    color: #494949;  
+    color: #494949;
 }
 
-.participations{
+.details:hover .d1 i {
+
+    color: #494949;
+}
+
+.participations {
     margin: 6rem 0;
 }
-.partcard{
+
+.partcard {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.partitem{
+
+.partitem {
     background-color: #eeecf9;
     width: 80%;
     display: flex;
@@ -645,17 +656,20 @@
     padding: 1rem 2rem;
     margin-top: 1.5rem;
 }
-.parthead{
+
+.parthead {
     padding-left: 3rem;
     width: 13%;
     font-size: 20px;
     font-weight: 700;
     color: #5840ba;
 }
-.partdesc{
+
+.partdesc {
     margin-left: 1rem;
-    
+
 }
+
 .footer {
     background-color: #5840ba;
     display: flex;
@@ -675,7 +689,8 @@
 .cs a {
     text-decoration: none;
     color: inherit;
-    position: relative; /* Needed for tooltip positioning */
+    position: relative;
+    /* Needed for tooltip positioning */
 }
 
 .cs a:hover i {
@@ -693,4 +708,185 @@
     opacity: 1;
 }
 
+
+/* Your existing CSS code here */
+html{
+    scroll-behavior: smooth;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5px;
+    /* padding: 0 20px; */
+    width: 100%;
+    gap: 8px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #5840ba;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .nav_item {
+    margin: 0.5em 0.5em;
+    color: #eeecf9;
+  }
+  .nav_item a{
+    color: white;
+  }
+
+  .contact_btn {
+   
+    display: none;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .fl {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 40px;
+  }
+
+  .role {
+    font-size: 40px;
+  }
+
+  .self_img {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+    margin: 5% 5%;
+  }
+
+  .aboutmeCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Info {
+    margin-top: 20px;
+  }
+
+  .who {
+    font-size: 35px;
+  }
+
+  .bgname{
+    font-size: 60px;
+    text-align: center;
+    margin-left:22px ;
+  }
+  .skillscard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillscarditem {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .imgCircle{
+    margin-left: 22px;
+  }
+  .edu_card{
+    padding-bottom: 10px;
+  }
+  .edu_card {
+    width: 90%;
+    height: auto;
+  }
+
+  .deg {
+    flex-direction: column;
+    margin: 1rem 2rem;
+  }
+
+  .marks {
+    margin-top: 10px;
+  }
+
+  .pitem {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pimg img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .pinfo {
+    margin: 0 1rem;
+  }
+
+  .details {
+    position: static;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .partitem {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .parthead {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .cs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .u_intro {
+    margin: 0;
+  }
+
+  .skillscard,
+  .pcards,
+  .partcard {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .skillscarditem,
+  .pitem,
+  .partitem {
+    width: 100%;
+  }
+}
 
